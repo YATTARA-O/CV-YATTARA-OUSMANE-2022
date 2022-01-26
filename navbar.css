@@ -1,0 +1,69 @@
+*, ::before,
+::after {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: serif;
+    background-color: lightgrey;
+}
+.header {
+    background-color: #333;
+    height: 100px;
+    padding: 12px 0;
+    transition: all .5s ease;
+}
+.header a {
+    color: white;
+}
+.navbar {
+    width: 65%;
+    height: 50px;
+    padding: 20px;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.btn {
+    border: none;
+    width: 15%;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: tomato;
+}
+.btn:focus {
+    background-color: gray;
+    outline: none;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 20%;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.header li a :hover {
+    color: black;
+    background-color: crimson;
+    border-radius: 20px;
+}
+.header li a :active {
+    color: blue;
+    font-size: larger;
+}
